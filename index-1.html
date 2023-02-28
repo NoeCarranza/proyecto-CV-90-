@@ -16,25 +16,31 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Raleway:wght@300;500&display=swap"
     rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/76f14e999c.js" crossorigin="anonymous"></script>
- <!--PWA-->
- <link rel="manifest" href="manifest.json">
- <meta name="theme-color" content="#bbbbbb">
- <link rel="apple-touch-icon" href="/heart-solid.png">
+  <!--PWA-->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#bbbbbb">
+  <link rel="apple-touch-icon" href="/heart-solid.png">
   <title>Proyecto CV </title>
   <!--favicon-->
   <link rel="icon" type="image/x-icon" href="assets/balloon-heart.svg">
 
-  	<!-- Serviceworker -->
-    <script>
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => {
-          navigator.serviceWorker && navigator.serviceWorker.register("/sw.js");
-        });
-      }
-    </script>
+  <!-- Serviceworker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js')
+          .then(registration => {
+            console.log('Service worker registrado con éxito:', registration);
+          })
+          .catch(error => {
+            console.log('Registro de service worker fallido:', error);
+          });
+      });
+    }
+  </script>
 </head>
 
 <body>
@@ -572,7 +578,8 @@
     <img src="assets/cookie.svg" alt="galleta" class="galleta">
     <h3 class="titulo-cookies">Cookies</h3>
     <p class="parrafo-cookies"></p>
-    <p>This website uses cookies to anonymously and statistically analyze the use you make of the website, improve the content and your browsing experience..</p>
+    <p>This website uses cookies to anonymously and statistically analyze the use you make of the website, improve the
+      content and your browsing experience..</p>
     <button class="botton-cookies" id="btnaceptarcookies">I agree</button>
     <a class="enlace-aviso-cookies" href="aviso-cookies.html">Terms and conditions of cookies</a>
   </div>
