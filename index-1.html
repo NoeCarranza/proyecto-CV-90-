@@ -19,8 +19,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/76f14e999c.js" crossorigin="anonymous"></script>
- <!--COOKIES-->
- <script type="text/javascript" src="aviso-cookies.js"></script>
  <!--PWA-->
  <link rel="manifest" href="manifest.json">
  <meta name="theme-color" content="#bbbbbb">
@@ -30,13 +28,13 @@
   <link rel="icon" type="image/x-icon" href="assets/balloon-heart.svg">
 
   	<!-- Serviceworker -->
-	<script>
-		if ("serviceWorker" in navigator) {
-			window.addEventListener("load", () => {
-				navigator.serviceWorker && navigator.serviceWorker.register("./sw.js");
-			});
-		}
-	</script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker && navigator.serviceWorker.register("sw.js");
+        });
+      }
+    </script>
 </head>
 
 <body>
@@ -570,15 +568,15 @@
 
 
   <!--AVISO COOKIES-->
-  <div class="aviso-cookies" id="aviso-cookies">
+  <div id="avisocookies" class="aviso-cookies">
     <img src="assets/cookie.svg" alt="galleta" class="galleta">
     <h3 class="titulo-cookies">Cookies</h3>
     <p class="parrafo-cookies"></p>
     <p>This website uses cookies to anonymously and statistically analyze the use you make of the website, improve the content and your browsing experience..</p>
-    <button class="botton-cookies" id="btn-aceptar-cookies">I agree</button>
+    <button class="botton-cookies" id="btnaceptarcookies">I agree</button>
     <a class="enlace-aviso-cookies" href="aviso-cookies.html">Terms and conditions of cookies</a>
   </div>
-  <div class="fondo-aviso-cookies" id="fondo-aviso-cookies">
+  <div id="fondoavisocookies" class="fondo-aviso-cookies">
 
   </div>
   <!---->
