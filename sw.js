@@ -9,13 +9,11 @@ self.addEventListener("install", event => {
 			return cache.addAll([
                 "/",
                 "/index-1.html",
-                "/css/styles.css",
                 "/js/index.js",
                 "/ballon-heart.png",
                 "/ballon-heart.svg",
                 "/cookie.svg",
                 "imagen 1.jpg",
-                "aviso-cookies.js",
                 "estilos.css",
                 "formulario.js",
                 "heart-solid.png",
@@ -23,6 +21,10 @@ self.addEventListener("install", event => {
                 "manifest.json",
                 "script.js",
                 "toast.js",
+				"aviso-cookies.html",
+				"aviso-cookies.js",
+				"estilos.css",
+				"style.css",
 			]);
 		})
 	);
