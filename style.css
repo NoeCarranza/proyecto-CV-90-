@@ -34,7 +34,7 @@ section {
   font-size: 2.5rem;
   align-items: center;
   color: antiquewhite;
-  font-family: "Yeseva One", cursive;
+  font-family: 'Gloock', serif;
   border: 20px;
   text-align: center;
   margin: 5px;
@@ -106,7 +106,7 @@ section {
   padding: 70px;
 }
 .seccion-titulo {
-  font-family: "Yeseva One", cursive;
+  font-family: 'Gloock', serif;
   padding: 10px;
   text-align: center;
   font-size: 60px;
@@ -177,7 +177,7 @@ section {
 }
 .experiencia-titulo {
   font-size: 25px;
-  font-family: "Yeseva One", cursive;
+  font-family: 'Gloock', serif;
   color: black;
   display: center;
   margin: 10px 0;
@@ -234,7 +234,7 @@ section {
   font-size: 25px;
   font-weight: bold;
   margin: 10px;
-  font-family: "Yeseva One", cursive;
+  font-family: 'Gloock', serif;
   color: rgb(221, 221, 221);
 }
 .diseño-texto {
@@ -275,7 +275,7 @@ section {
 }
 
 .referencias-titulo {
-  font-family: "Yeseva One", cursive;
+  font-family: 'Gloock', serif;
   font-size: 20px;
   color: rgb(2, 32, 46);
   border: 40px;
@@ -342,7 +342,7 @@ section {
   justify-content: center;
 }
 .title {
-  font-family: "Yeseva One", cursive;
+  font-family: 'Gloock', serif;
   font-size: 2.5rem;
   color: rgb(2, 32, 46);
   text-align: center;
