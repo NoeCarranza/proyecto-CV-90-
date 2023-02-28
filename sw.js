@@ -1,7 +1,7 @@
 const cacheName = "cache1"; 
 
 self.addEventListener("install", event => {
-
+	
 	self.skipWaiting();
 
 	event.waitUntil(
